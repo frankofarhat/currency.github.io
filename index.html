@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Currency Converter Application</title>
+</head>
+
+<body>
+    <h1>Currency Converter Application</h1>
+    <div class="converter">
+        <input type="number" class="amount" placeholder="Enter Amount" />
+
+        <select class="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+        </select>
+        <select class="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+        </select>
+        <button id="convertButton" onclick="convertCurrency()">Convert</button>
+        <div class="result"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
