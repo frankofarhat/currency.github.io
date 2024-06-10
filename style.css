@@ -18,17 +18,26 @@ h1 {
     max-width: 500px;
     background-color: #f4f4f4;
     margin: 10px auto;
-    background: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+.input-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input-container i {
+    margin-right: 10px;
+    color: #333;
+}
+
 select,
 input {
-    width: 100%;
-    margin: 10px;
+    flex: 1;
     padding: 15px;
     border: none;
     border-bottom: 1px solid #333;
@@ -41,17 +50,23 @@ select:focus {
 
 button {
     padding: 10px;
-    margin-left: 10px;
     font-size: 1em;
-    font-weight: bolder;
+    font-weight: bold;
     cursor: pointer;
     background-color: #03a9f4;
-    display: flex;
     border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button:hover {
     background-color: #f44336;
+}
+
+button i {
+    margin-right: 5px;
 }
 
 .result {
